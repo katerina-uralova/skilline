@@ -1050,24 +1050,6 @@ legend {
   text-align: center;
 }
 
-.about__card--instructors {
-  background-image: url("../../img/about/img-01.jpg");
-}
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-  .about__card--instructors {
-    background-image: url("../../img/about/img-01@2x.jpg");
-  }
-}
-
-.about__card--students {
-  background-image: url("../../img/about/img-02.jpg");
-}
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-  .about__card--students {
-    background-image: url("../../img/about/img-02@2x.jpg");
-  }
-}
-
 .about__cards {
   margin-bottom: 180px;
   display: flex;
@@ -1138,6 +1120,24 @@ legend {
 @media (max-width: 425px) {
   .about__card {
     min-width: unset;
+  }
+}
+
+.about__card--instructors {
+  background-image: url("./../img/about/img-01.jpg");
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .about__card--instructors {
+    background-image: url("./../img/about/img-01@2x.jpg");
+  }
+}
+
+.about__card--students {
+  background-image: url("./../img/about/img-02.jpg");
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .about__card--students {
+    background-image: url("./../img/about/img-02@2x.jpg");
   }
 }
 
