@@ -1,0 +1,40 @@
+.text {
+    font-family: var(--font-family);
+    font-weight: 400;
+    color: #696984;
+    line-height: 1.8;
+    letter-spacing: 0.02em;
+   
+    &--1 {
+        font-size: 22px;    
+        
+        @include lg {
+            font-size: 18px;   
+        }
+        @include md {
+            font-size: 16px;   
+        }
+        @include mbs {
+            font-size: 15px;  
+        }
+        @include mbxs {
+            font-size: 14px;   
+        }
+    }
+
+    &--2 {
+        font-size: 24px;
+        @include lg {
+            font-size: 20px;  
+        }
+        @include md {
+            font-size: 18px;  
+        }
+        @include mbs {
+            font-size: 16px; 
+        }
+        @include mbxs {
+            font-size: 14px;  
+        }
+    }
+}

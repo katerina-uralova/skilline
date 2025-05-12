@@ -1,0 +1,47 @@
+.companies {
+    padding:100px 0 160px;
+    text-align:center;
+    @include tbl {
+        padding: 100px 0 140px;
+    }
+    @include tb {
+        padding:100px 0 130px;
+    }
+}
+
+.companies__text {
+    margin-bottom: 32px;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 1.6;
+    letter-spacing: 0.02em;
+    color: #696984;
+    @include lg {
+        font-size: 26px;
+    }
+    @include tb {
+        font-size: 23px;
+    }
+    @include mbl {
+        margin-bottom: 40px;
+    }
+    @include mbxs {
+        font-size: 18px;
+    }
+}
+
+.companies__logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap; 
+    img{
+        max-height: 50px;
+        max-width: 150px; 
+        object-fit: contain; 
+        flex-shrink: 0;
+      
+    }
+}

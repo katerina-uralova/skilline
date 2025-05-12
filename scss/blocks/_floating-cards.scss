@@ -1,0 +1,129 @@
+.floating-card {
+    position: absolute;
+    z-index: 1;
+}
+
+
+
+.floating-card__card-1 {
+    top: 36.5%;
+    right: 34%;
+
+    display: flex;
+    gap: 32px;
+    padding: 25px 28px;
+
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+
+}
+
+.floating-card__text {
+    font-family: var(--second-family);
+    font-weight: 600;
+    font-size: 20px;
+
+    letter-spacing: 0.02em;
+    color: #545567;
+
+    p:first-child {
+        font-family: var(--second-family);
+        font-weight: 700;
+        font-size: 24px;
+
+        letter-spacing: 0.02em;
+        color: #595959;
+    }
+}
+
+.floating-card__card-2 {
+    top: 31.6%;
+    right: 9.8%;
+
+    filter: drop-shadow(0 8px 40px rgba(210, 77, 101, 0.26));
+}
+
+.floating-card__card-3 {
+    top: 66.5%;
+    right: 29.7%;
+
+    display: flex;
+    flex-shrink: 0;
+    gap: 23px;
+    padding: 26px;
+
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+
+}
+
+.floating-card__user {
+    align-self: flex-start;
+    position: relative;
+    width: 56px;
+    height: 56px;
+
+    img {
+        width: 56px;
+        height: 56px;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+}
+
+.floating-card__user-status {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #2ebb5e;
+    border-radius: 50%;
+    bottom: 0;
+    right: 0;
+    border: 2px solid #fbecd7;
+}
+
+.floating-card__button {
+    margin-top: 19px;
+    padding: 12px 48px;
+
+    font-family: var(--second-family);
+    font-weight: 700;
+    font-size: 20px;
+    color: #fff;
+
+    border-radius: 80px;
+    background-color: #d8587e;
+    transition: all 0.2s ease-in;
+
+    &:hover {
+        opacity: 0.8;
+    }
+}
+
+.floating-card__card-4 {
+    top: 54%;
+    right: 1.4%;
+
+    padding: 30px 26px;
+
+    display: flex;
+    gap: 24px;
+
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+
+}
+
+.floating-card__check {
+    position: absolute;
+    top: 21px;
+    right: 16px;
+}
+.floating-card__wrapper {
+    @include xl {
+        display: none;
+    }
+}

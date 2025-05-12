@@ -1,0 +1,68 @@
+:root {
+    // Fonts
+
+    --font-family: "Poppins", sans-serif;
+    --second-family: "Nunito Sans", sans-serif;
+
+
+    // Colors
+    --text-color:#696984;
+    --primery-color:#2f327d;
+    --secondary-color:#f48c06;
+    --tertiary-color:#65daff;
+  }
+  @mixin mediaBg(){ 
+
+    @media(-webkit-min-device-pixel-ratio: 2),(min-resolution: 192dpi){  
+
+        @content 
+
+           }  
+} ;
+
+// Media
+
+@mixin xl {
+  @media (max-width: 1600px) {
+    @content;
+  }
+}
+
+@mixin lg {
+  @media (max-width: 1400px) {
+    @content;
+  }
+}
+@mixin md {
+  @media (max-width:1200px){
+    @content;
+  }
+}
+@mixin tbl {
+  @media (max-width:992px){
+    @content;
+  }
+}
+@mixin tb {
+  @media (max-width:768px){
+    @content;
+  }
+}
+@mixin mbl {
+  @media (max-width:576px){
+    @content;
+  }
+}
+
+@mixin mbs {
+  @media (max-width:425px){
+    @content;
+  }
+}
+@mixin mbxs {
+  @media (max-width:320px){
+    @content;
+  }
+}
+
+

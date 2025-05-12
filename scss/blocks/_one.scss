@@ -1,0 +1,64 @@
+.one {
+    padding-bottom: 160px;
+
+    @include tbl {
+        padding-bottom: 140px;
+    }
+    @include mbxs {
+        padding-bottom: 100px;
+    }
+}
+
+.one__wrapper {
+    margin-bottom: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 190px;
+    flex-wrap: wrap;
+
+    @include lg {
+        gap: 130px;
+        margin-bottom: 79px;
+    }
+
+    @include tbl {
+        flex-direction: column-reverse;
+    }
+    @include mbs {
+        gap: 100px;
+    }
+
+}
+
+.one__pic {
+    flex: 1 1 350px;
+
+    @include mbs {
+        flex: 1 1 100px;
+    }
+
+}
+
+.one__info {
+    flex: 1 1 350px;
+    max-width: 540px;
+    min-width: 350px;
+
+    @include tbl {
+        flex: 1 1 0;
+        text-align: center;
+    }
+    @include mbs {
+        min-width: unset;
+    }
+}
+
+.one__title {
+    margin-bottom: 20px;
+}
+
+.one__button {
+    display: block;
+    margin: 0 auto;
+}

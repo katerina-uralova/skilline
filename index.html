@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header__wrapper">
+                <!-- Header top -->
+                <div class="header__top">
+                    <div class="header__logo">
+                        <a href="index.html"><img src="./img/logo.svg" alt="logo"></a>
+                    </div>
+
+                    <!-- Menu -->
+                    <div class="header__nav nav">
+                        <ul class="nav__list">
+                            <li class="nav__item">
+                                <a href="#!" class="nav__link">Home</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#!" class="nav__link">Careers</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#!" class="nav__link">Blog</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#!" class="nav__link">About Us</a>
+                            </li>
+
+                           
+
+                        </ul>
+                    </div>
+
+                    <!-- Menu mobile -->
+
+                    <button class="menu-toggle" id="menu-open" aria-label="Open menu">
+                        <svg width="32" height="32" viewBox="0 0 24 24">
+                            <path d="M3 6h18M3 12h18M3 18h18" stroke="#252641" stroke-width="2" fill="none" />
+                        </svg>
+                    </button>
+
+
+                    <div class="header__mobile-nav nav__mobile" id="mobile-menu">
+
+                        <button class="menu-close" id="menu-close" aria-label="Close menu">
+                            <svg width="32" height="32" viewBox="0 0 24 24">
+                                <path d="M18 6L6 18M6 6l12 12" stroke="#fff" stroke-width="2" fill="none" />
+                            </svg>
+                        </button>
+
+                        <ul class="nav__list-mobile">
+                            <li class="nav__item-mobile"><a href="#!" class="nav__link-mobile">Home</a></li>
+                            <li class="nav__item"><a href="#!" class="nav__link-mobile">Careers</a></li>
+                            <li class="nav__item"><a href="#!" class="nav__link-mobile">Blog</a></li>
+                            <li class="nav__item"><a href="#!" class="nav__link-mobile">About Us</a></li>
+                            <li class="nav__item"><a href="#!" class="nav__link-mobile nav__link-mobile--login">Login</a></li>
+                            <li class="nav__item"><a href="#!" class="nav__link-mobile nav__link-mobile--signup">Sign up</a></li>
+
+                        </ul>
+                    </div>
+
+                    <div class="header__top-btns">
+                        <button id="openSignIn" class="header__login">Login</button>
+                        <button id="openSignUp" class="header__sign-up">Sign Up</button>
+
+                        <!-- Modal window Sign In -->
+                        <div class="modal" id="signInModal">
+                            <div class="modal-content">
+                                <span class="close" data-modal="signInModal">&times;</span>
+                                <h2>Sign In</h2>
+                                <form>
+                                    <div class="form-group">
+                                        <label>Email</label>
+                                        <input type="email" placeholder="Enter email" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Password</label>
+                                        <input type="password" placeholder="Enter password" required>
+                                    </div>
+                                    <button type="submit" class="submit-btn">Sign In</button>
+                                </form>
+                            </div>
+                        </div>
+
+                        <!-- Modal window Subscribe -->
+                        <div class="modal" id="signUpModal">
+                            <div class="modal-content">
+                                <span class="close" data-modal="signUpModal">&times;</span>
+                                <h2>Sign up</h2>
+                                <form>
+                                    <div class="form-group">
+                                        <label>Email</label>
+                                        <input type="email" placeholder="Enter email" required>
+
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="psw">Password</label>
+                                        <input type="password" placeholder="Enter Password" name="psw" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="psw-repeat">Repeat Password</label>
+                                        <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+                                    </div>
+                                    <button type="submit" class="submit-btn">Sign up</button>
+                                </form>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Header content -->
+                <div class="header__content">
+                    <h1 class="header__title"><span>Studying </span>Online is now much easier</h1>
+                    <p class="header__descr">Skilline is an interesting platform that will teach you in more an
+                        interactive
+                        way</p>
+                    <div class="header__btns">
+                        <button class="header__join-btn">Join for free</button>
+
+                        <a href="#!" class="header__watch-btn">
+                            <svg width="80" height="80" viewBox="0 0 80 80" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="40" cy="40" r="40" fill="white" />
+                                <path
+                                    d="M54.5751 39.8097C55.2212 40.1983 55.2212 41.135 54.5751 41.5236L33.5154 54.1891C32.8489 54.5899 32 54.1099 32 53.3321L32 28.0012C32 27.2235 32.8489 26.7434 33.5154 27.1443L54.5751 39.8097Z"
+                                    fill="#23BDEE" />
+                            </svg>
+
+                            Watch how it works</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Floating cards -->
+        <div class="floating-card__wrapper">
+
+            <!-- Card-1 -->
+            <div class="floating-card floating-card__card-1">
+                <img src="./img/svg-icons/calendar.svg" alt="calendar">
+                <div class="floating-card__text">
+                    <p>250k</p>
+                    <p>Assisted Student</p>
+                </div>
+            </div>
+
+            <!-- Card-2 -->
+            <div class="floating-card floating-card__card-2">
+                <svg width="69" height="69" viewBox="0 0 69 69" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="69" height="69" rx="14" fill="#F3627C" />
+                    <rect x="11.35" y="12.075" width="47.3" height="44.85" rx="8" fill="white" />
+                    <path d="M34.5 22.425V46.575" stroke="#F25471" stroke-width="4" stroke-linecap="round" />
+                    <path d="M25.875 26.7375L25.875 46.575" stroke="#F25471" stroke-width="4" stroke-linecap="round" />
+                    <path d="M43.125 31.9125V46.575" stroke="#F25471" stroke-width="4" stroke-linecap="round" />
+                </svg>
+            </div>
+
+            <!-- Card-3 -->
+            <div class="floating-card floating-card__card-3">
+                <div class="floating-card__user">
+                    <img src="./img/header/user.svg"></img>
+                    <span class="floating-card__user-status"></span>
+                </div>
+
+
+                <div class="floating-card__text">
+                    <p>User Experience Class</p>
+                    <p>Today at 12.00 PM</p>
+                    <button class="floating-card__button">
+                        Join Now
+                    </button>
+                </div>
+
+            </div>
+
+            <!-- Card-4 -->
+            <div class="floating-card floating-card__card-4">
+                <img src="./img/svg-icons/check.svg" class="floating-card__check"></img>
+                <img src="./img/svg-icons/email.svg" alt="email">
+                <div class="floating-card__text">
+                    <p>Congratulations</p>
+                    <p>Your admission completed</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Companies -->
+    <section class="companies">
+        <div class="container">
+            <p class="companies__text">Trusted by 5,000+ Companies Worldwide</p>
+            <div class="companies__logos">
+                <img src="./img/companies/google.jpg" alt="Google">
+                <img src="./img/companies/netflix.jpg" alt="Netflix">
+                <img src="./img/companies/airbnb.jpg" alt="Airbnb">
+                <img src="./img/companies/amazon.jpg" alt="Amazon">
+                <img src="./img/companies/facebook.jpg" alt="Facebook">
+                <img src="./img/companies/grab.jpg" alt="Grab">
+            </div>
+        </div>
+    </section>
+
+    <!-- All-in-one -->
+    <section class="all-in-one">
+        <div class="container">
+            <h2 class="all-in-one__title heading heading--2">All-In-One <span> Cloud Software.</span></h2>
+            <p class="all-in-one__descr text text--2">Skilline is one powerful online software suite that combines all
+                the tools
+                needed to run a successful school or office.
+            </p>
+            <div class="all-in-one__cards">
+
+                <!-- Card-1 -->
+                <div class="all-in-one__card">
+                    <svg class="all-in-one__card-pic" width="100" height="100" viewBox="0 0 100 100" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <g id="Frame 15">
+                            <g id="Group 79">
+                                <circle id="Ellipse 5" cx="50" cy="50" r="50" fill="#5B72EE" />
+                                <g id="file-invoice 1" clip-path="url(#clip0_3074_10)">
+                                    <path id="Vector"
+                                        d="M58.75 50H42.25V55.75H58.75V50ZM66.3984 36.4336L57.9852 27.6289C57.5984 27.2246 57.0742 27 56.5242 27H56V38.5H67V37.952C67 37.3859 66.7852 36.8379 66.3984 36.4336ZM53.25 39.2188V27H36.0625C34.9195 27 34 27.9613 34 29.1562V70.8438C34 72.0387 34.9195 73 36.0625 73H64.9375C66.0805 73 67 72.0387 67 70.8438V41.375H55.3125C54.1781 41.375 53.25 40.4047 53.25 39.2188ZM39.5 33.4688C39.5 33.0716 39.8077 32.75 40.1875 32.75H47.0625C47.4423 32.75 47.75 33.0716 47.75 33.4688V34.9062C47.75 35.3034 47.4423 35.625 47.0625 35.625H40.1875C39.8077 35.625 39.5 35.3034 39.5 34.9062V33.4688ZM39.5 39.2188C39.5 38.8216 39.8077 38.5 40.1875 38.5H47.0625C47.4423 38.5 47.75 38.8216 47.75 39.2188V40.6562C47.75 41.0534 47.4423 41.375 47.0625 41.375H40.1875C39.8077 41.375 39.5 41.0534 39.5 40.6562V39.2188ZM61.5 66.5312C61.5 66.9284 61.1923 67.25 60.8125 67.25H53.9375C53.5577 67.25 53.25 66.9284 53.25 66.5312V65.0938C53.25 64.6966 53.5577 64.375 53.9375 64.375H60.8125C61.1923 64.375 61.5 64.6966 61.5 65.0938V66.5312ZM61.5 48.5625V57.1875C61.5 57.9817 60.8847 58.625 60.125 58.625H40.875C40.1153 58.625 39.5 57.9817 39.5 57.1875V48.5625C39.5 47.7683 40.1153 47.125 40.875 47.125H60.125C60.8847 47.125 61.5 47.7683 61.5 48.5625Z"
+                                        fill="white" />
+                                </g>
+                            </g>
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_3074_10">
+                                <rect width="33" height="46" fill="white" transform="translate(34 27)" />
+                            </clipPath>
+                        </defs>
+                    </svg>
+                    <h3 class="all-in-one__card-title">Online Billing, Invoicing, & Contracts
+                    </h3>
+                    <p class="all-in-one__card-text">Simple and secure control of your organization’s financial and
+                        legal transactions. Send customized invoices and contracts</p>
+                </div>
+
+                <!-- Card-2 -->
+                <div class="all-in-one__card">
+                    <svg class="all-in-one__card-pic" width="100" height="100" viewBox="0 0 100 100" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="50" cy="50" r="50" fill="#F48C06" />
+                        <g clip-path="url(#clip0_3074_11)">
+                            <path
+                                d="M38 26C37.0532 26 36.2857 26.7675 36.2857 27.7143V31.1429H39.7142V27.7143C39.7142 26.7675 38.9467 26 38 26Z"
+                                fill="white" />
+                            <path
+                                d="M62 26C61.0532 26 60.2856 26.7675 60.2856 27.7143V31.1429H63.7142V27.7143C63.7143 26.7675 62.9468 26 62 26Z"
+                                fill="white" />
+                            <path
+                                d="M68.8571 31.1428H63.7143V38C63.7143 38.9468 62.9468 39.7143 62 39.7143C61.0532 39.7143 60.2857 38.9468 60.2857 38V31.1428H39.7142V38C39.7142 38.9468 38.9467 39.7143 37.9999 39.7143C37.0531 39.7143 36.2856 38.9468 36.2856 38V31.1428H31.1429C28.3025 31.1428 26 33.4454 26 36.2857V68.8571C26 71.6974 28.3025 74 31.1429 74H68.8571C71.6975 74 74 71.6974 74 68.8571V36.2857C74 33.4454 71.6975 31.1428 68.8571 31.1428ZM70.5714 68.8571C70.5714 69.8039 69.8039 70.5714 68.857 70.5714H31.1429C30.196 70.5714 29.4285 69.8039 29.4285 68.8571V46.5714H70.5714V68.8571Z"
+                                fill="white" />
+                            <path
+                                d="M39.7142 49.9999H36.2857C35.3389 49.9999 34.5714 50.7674 34.5714 51.7142C34.5714 52.661 35.3389 53.4285 36.2857 53.4285H39.7142C40.661 53.4285 41.4285 52.661 41.4285 51.7142C41.4285 50.7674 40.661 49.9999 39.7142 49.9999Z"
+                                fill="white" />
+                            <path
+                                d="M51.7143 49.9999H48.2857C47.3389 49.9999 46.5714 50.7674 46.5714 51.7142C46.5714 52.661 47.3389 53.4285 48.2857 53.4285H51.7143C52.6611 53.4285 53.4286 52.661 53.4286 51.7142C53.4286 50.7674 52.6611 49.9999 51.7143 49.9999Z"
+                                fill="white" />
+                            <path
+                                d="M63.7143 49.9999H60.2857C59.3389 49.9999 58.5714 50.7674 58.5714 51.7142C58.5714 52.661 59.3389 53.4285 60.2857 53.4285H63.7143C64.6611 53.4285 65.4286 52.661 65.4286 51.7142C65.4286 50.7674 64.661 49.9999 63.7143 49.9999Z"
+                                fill="white" />
+                            <path
+                                d="M39.7142 56.8571H36.2857C35.3389 56.8571 34.5714 57.6246 34.5714 58.5714C34.5714 59.5182 35.3389 60.2857 36.2857 60.2857H39.7142C40.661 60.2857 41.4285 59.5182 41.4285 58.5714C41.4285 57.6246 40.661 56.8571 39.7142 56.8571Z"
+                                fill="white" />
+                            <path
+                                d="M51.7143 56.8571H48.2857C47.3389 56.8571 46.5714 57.6246 46.5714 58.5714C46.5714 59.5182 47.3389 60.2857 48.2857 60.2857H51.7143C52.6611 60.2857 53.4286 59.5182 53.4286 58.5714C53.4286 57.6246 52.6611 56.8571 51.7143 56.8571Z"
+                                fill="white" />
+                            <path
+                                d="M63.7143 56.8571H60.2857C59.3389 56.8571 58.5714 57.6246 58.5714 58.5714C58.5714 59.5182 59.3389 60.2857 60.2857 60.2857H63.7143C64.6611 60.2857 65.4286 59.5182 65.4286 58.5714C65.4285 57.6246 64.661 56.8571 63.7143 56.8571Z"
+                                fill="white" />
+                            <path
+                                d="M39.7142 63.7142H36.2857C35.3389 63.7142 34.5714 64.4817 34.5714 65.4286C34.5714 66.3754 35.3389 67.1428 36.2857 67.1428H39.7142C40.661 67.1428 41.4285 66.3753 41.4285 65.4284C41.4285 64.4816 40.661 63.7142 39.7142 63.7142Z"
+                                fill="white" />
+                            <path
+                                d="M51.7143 63.7142H48.2857C47.3389 63.7142 46.5714 64.4817 46.5714 65.4285C46.5714 66.3754 47.3389 67.1429 48.2857 67.1429H51.7143C52.6611 67.1429 53.4286 66.3754 53.4286 65.4285C53.4286 64.4817 52.6611 63.7142 51.7143 63.7142Z"
+                                fill="white" />
+                            <path
+                                d="M63.7143 63.7142H60.2857C59.3389 63.7142 58.5714 64.4817 58.5714 65.4285C58.5714 66.3754 59.3389 67.1429 60.2857 67.1429H63.7143C64.6611 67.1429 65.4286 66.3754 65.4286 65.4285C65.4286 64.4817 64.661 63.7142 63.7143 63.7142Z"
+                                fill="white" />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_3074_11">
+                                <rect width="48" height="48" fill="white" transform="translate(26 26)" />
+                            </clipPath>
+                        </defs>
+                    </svg>
+
+                    <h3 class="all-in-one__card-title">Easy Scheduling & Attendance Tracking
+                    </h3>
+                    <p class="all-in-one__card-text">Schedule and reserve classrooms at one campus or multiple campuses.
+                        Keep detailed records of student attendance</p>
+                </div>
+
+                <!-- Card-3 -->
+                <div class="all-in-one__card">
+                    <svg class="all-in-one__card-pic" width="100" height="100" viewBox="0 0 100 100" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="50" cy="50" r="50" fill="#29B9E7" />
+                        <path
+                            d="M31.25 47.25C34.2836 47.25 36.75 44.7836 36.75 41.75C36.75 38.7164 34.2836 36.25 31.25 36.25C28.2164 36.25 25.75 38.7164 25.75 41.75C25.75 44.7836 28.2164 47.25 31.25 47.25ZM69.75 47.25C72.7836 47.25 75.25 44.7836 75.25 41.75C75.25 38.7164 72.7836 36.25 69.75 36.25C66.7164 36.25 64.25 38.7164 64.25 41.75C64.25 44.7836 66.7164 47.25 69.75 47.25ZM72.5 50H67C65.4875 50 64.1211 50.6102 63.1242 51.5984C66.5875 53.4977 69.0453 56.9266 69.5781 61H75.25C76.7711 61 78 59.7711 78 58.25V55.5C78 52.4664 75.5336 50 72.5 50ZM50.5 50C55.8195 50 60.125 45.6945 60.125 40.375C60.125 35.0555 55.8195 30.75 50.5 30.75C45.1805 30.75 40.875 35.0555 40.875 40.375C40.875 45.6945 45.1805 50 50.5 50ZM57.1 52.75H56.3867C54.5992 53.6094 52.6141 54.125 50.5 54.125C48.3859 54.125 46.4094 53.6094 44.6133 52.75H43.9C38.4344 52.75 34 57.1844 34 62.65V65.125C34 67.4023 35.8477 69.25 38.125 69.25H62.875C65.1523 69.25 67 67.4023 67 65.125V62.65C67 57.1844 62.5656 52.75 57.1 52.75ZM37.8758 51.5984C36.8789 50.6102 35.5125 50 34 50H28.5C25.4664 50 23 52.4664 23 55.5V58.25C23 59.7711 24.2289 61 25.75 61H31.4133C31.9547 56.9266 34.4125 53.4977 37.8758 51.5984Z"
+                            fill="white" />
+                    </svg>
+                    <h3 class="all-in-one__card-title">Customer Tracking
+                    </h3>
+                    <p class="all-in-one__card-text">Automate and track emails to individuals or groups. Skilline’s
+                        built-in system helps organize your organization </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section class="about">
+        <div class="container">
+            <h2 class="about__title heading heading--1">What is <span>Skilline?</span>
+            </h2>
+
+            <p class="about__text text text--1">Skilline is a platform that allows educators to create online classes
+                whereby they
+                can store the course materials online; manage assignments, quizzes and exams; monitor due dates; grade
+                results and provide students with feedback all in one place.</p>
+            <div class="about__cards">
+                <!-- Card-1 -->
+                <div class="about__card about__card--instructors">
+                    <div class="about__card-wrapper">
+                        <a href="#!">
+                            <h3 class="about__card-title">for instructors</h3>
+                        </a>
+                        <button class="about__card-button">Start a class today</button>
+                    </div>
+                </div>
+                <!-- Card-2 -->
+                <div class="about__card about__card--students">
+                    <div class="about__card-wrapper">
+                        <a href="#!">
+                            <h3 class="about__card-title">for students</h3>
+                        </a>
+                        <button class="about__card-button">Enter access code</button>
+                    </div>
+                </div>
+            </div>
+            <div class="about__info">
+                <div class="about__descr">
+                    <h3 class="about__descr-title heading heading--2">Everything you can do in a physical classroom,
+                        <span>you can do with
+                            Skilline</span>
+                    </h3>
+                    <div class="about__descr-text text text--2">
+                        Skilline’s school management software helps traditional and online
+                        schools manage scheduling, attendance, payments and virtual classrooms all in one secure
+                        cloud-based system.</div>
+                    <a href="#!" class="about__descr-link">Learn more</a>
+                </div>
+                <div class="about__video">
+                    <video id="about-video" src="./img/about/classroom.mp4" poster="./img/about/video-cover.jpg">
+                    </video>
+                    <a class="about__play-btn" href="#!"><img src="./img/svg-icons/play.svg" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section class="features">
+        <div class="container">
+            <h2 class="features__title heading heading--2">
+                Our <span>Features</span>
+            </h2>
+            <p class="features__text text text--2">
+                This very extraordinary feature, can make learning activities more efficient
+            </p>
+            <div class="features__info">
+                <div class="features__img">
+                    <div class="features__decor-circle features__decor-circle--green"></div>
+                    <div class="features__decor-circle features__decor-circle--blue"></div>
+                    <div class="features__decor-circle features__decor-circle--orange"></div>
+
+                    <img src="./img/features/group.jpg" srcset="./img/features/group@2x.jpg 2x" alt="Group">
+                </div>
+                <div class="features__descr">
+                    <h2 class="features__descr-title heading heading--1">A <span>user interface</span> designed for the
+                        classroom</h2>
+
+                    <ul class="features__list">
+                        <li class="features__item">
+                            <svg width="60" height="60" viewBox="0 0 60 60" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="30" cy="30" r="30" fill="#FBFBFB" />
+                                <rect x="17" y="17" width="11.8182" height="11.8182" rx="2" fill="#2F327D" />
+                                <rect x="17" y="31.1816" width="11.8182" height="11.8182" rx="2" fill="#2F327D" />
+                                <rect x="31.7727" y="17" width="11.8182" height="11.8182" rx="2" fill="#2F327D" />
+                                <rect x="31.7727" y="31.1816" width="11.8182" height="11.8182" rx="2" fill="#F48C06" />
+                            </svg>
+
+                            <p class="features__item-text">Teachers don’t get lost in the grid view and have a dedicated
+                                Podium space.
+                            </p>
+                        </li>
+                        <li class="features__item">
+                            <svg width="60" height="60" viewBox="0 0 60 60" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="30" cy="30" r="30" fill="#FBFBFB" />
+                                <rect x="24" y="23" width="20" height="20" rx="2" fill="#2F327D" />
+                                <rect x="16" y="17" width="21.2245" height="21.2245" rx="2" fill="#F48C06" />
+                            </svg>
+
+                            <p class="features__item-text">TA’s and presenters can be moved to the front of the class.
+                            </p>
+                        </li>
+                        <li class="features__item">
+                            <svg width="60" height="60" viewBox="0 0 60 60" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="30" cy="30" r="30" fill="#FBFBFB" />
+                                <path
+                                    d="M19.5 28.375C21.1547 28.375 22.5 26.9176 22.5 25.125C22.5 23.3324 21.1547 21.875 19.5 21.875C17.8453 21.875 16.5 23.3324 16.5 25.125C16.5 26.9176 17.8453 28.375 19.5 28.375ZM40.5 28.375C42.1547 28.375 43.5 26.9176 43.5 25.125C43.5 23.3324 42.1547 21.875 40.5 21.875C38.8453 21.875 37.5 23.3324 37.5 25.125C37.5 26.9176 38.8453 28.375 40.5 28.375ZM42 30H39C38.175 30 37.4297 30.3605 36.8859 30.9445C38.775 32.0668 40.1156 34.093 40.4062 36.5H43.5C44.3297 36.5 45 35.7738 45 34.875V33.25C45 31.4574 43.6547 30 42 30ZM30 30C32.9016 30 35.25 27.4559 35.25 24.3125C35.25 21.1691 32.9016 18.625 30 18.625C27.0984 18.625 24.75 21.1691 24.75 24.3125C24.75 27.4559 27.0984 30 30 30ZM33.6 31.625H33.2109C32.2359 32.1328 31.1531 32.4375 30 32.4375C28.8469 32.4375 27.7688 32.1328 26.7891 31.625H26.4C23.4187 31.625 21 34.2453 21 37.475V38.9375C21 40.2832 22.0078 41.375 23.25 41.375H36.75C37.9922 41.375 39 40.2832 39 38.9375V37.475C39 34.2453 36.5812 31.625 33.6 31.625ZM23.1141 30.9445C22.5703 30.3605 21.825 30 21 30H18C16.3453 30 15 31.4574 15 33.25V34.875C15 35.7738 15.6703 36.5 16.5 36.5H19.5891C19.8844 34.093 21.225 32.0668 23.1141 30.9445Z"
+                                    fill="#2F327D" />
+                            </svg>
+
+                            <p class="features__item-text">Teachers can easily see all students and class data at one
+                                time.</p>
+                        </li>
+
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tools -->
+    <section class="tools">
+        <div class="container">
+            <div class="tools__wrapper">
+                <div class="tools__info">
+                    <h2 class="tools__title heading heading--1">
+                        <span>Tools</span> For Teachers And Learners
+                    </h2>
+                    <p class="tools__text text text--1">
+                        Class has a dynamic set of teaching tools built to be deployed and used during class.
+                        Teachers can handout assignments in real-time for students to complete and submit.
+                    </p>
+                </div>
+                <div class="tools__pic">
+
+                    <div class="tools__decor-circle tools__decor-circle--orange"></div>
+                    <div class="tools__decor-circle tools__decor-circle--green"></div>
+                    <div class="tools__decor-circle tools__decor-circle--purple"></div>
+
+                    <img src="./img/tools/tools-pic.jpg" srcset="./img/tools/tools-pic@2x.jpg 2x" alt="Girl">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quizzes -->
+    <section class="quizzes">
+        <div class="container">
+            <div class="quizzes__wrapper">
+                <div class="quizzes__card-wrapper">
+
+                    <div class="quizzes__card">
+
+                        <div class="quizzes__decor-circle quizzes__decor-circle--dark-blue"></div>
+                        <div class="quizzes__decor-circle quizzes__decor-circle--orange"></div>
+                        <div class="quizzes__decor-circle quizzes__decor-circle--green"></div>
+                        <div class="quizzes__decor-circle quizzes__decor-circle--pink"></div>
+
+                        <div class="quizzes__question-number">
+                            Question 1
+                        </div>
+                        <div class="quizzes__question">
+                            True or false? This play takes place in Italy
+                        </div>
+                        <div class="quizzes__pic">
+                            <img src="./img/quizzes/italy.jpg" alt="Italy">
+                        </div>
+                        <div class="quizzes__notice">
+
+                            <span class="quizzes__notice-icon">
+                                <svg class="svg-animated" width="90" height="77" viewBox="0 0 90 77" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_3024_20)">
+                                        <path
+                                            d="M73.7479 18.8718L32.0181 21.9757C30.26 22.1064 28.7519 23.2008 28.0822 24.8315C27.4126 26.4623 27.7164 28.3008 28.8751 29.6293L38.0266 40.1216L53.0624 32.53C53.7542 32.1806 54.5984 32.4583 54.9478 33.1503C55.2972 33.8422 55.0195 34.6864 54.3275 35.0357L39.2918 42.6274L42.3014 56.2207C42.6824 57.942 43.9813 59.278 45.6912 59.7073C47.4045 60.1374 49.1791 59.5703 50.3261 58.2357L77.5994 26.4996C78.8411 25.0547 79.079 23.1006 78.2203 21.3999C77.3616 19.6991 75.6479 18.7303 73.7479 18.8718Z"
+                                            fill="#41BE90" class="svg-elem-1"></path>
+                                    </g>
+                                    <line x1="9.52383" y1="48.1154" x2="29.3224" y2="38.119" stroke="#41BE90"
+                                        stroke-width="2.73088" stroke-linecap="round" class="svg-elem-2"></line>
+                                    <line x1="18.9567" y1="49.7926" x2="31.9133" y2="43.2508" stroke="#FBA333"
+                                        stroke-width="2.73088" stroke-linecap="round" class="svg-elem-3"></line>
+                                    <line x1="27.5343" y1="51.901" x2="34.5042" y2="48.3819" stroke="#41BE90"
+                                        stroke-width="2.73088" stroke-linecap="round" class="svg-elem-4"></line>
+                                    <defs>
+                                        <clipPath id="clip0_3024_20">
+                                            <rect width="47.9037" height="47.9037" fill="white"
+                                                transform="translate(24.6626 21.6094) rotate(-26.7895)"
+                                                class="svg-elem-5"></rect>
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </span>
+                            <p class="quizzes__notice-message">Your answer was sent successfully</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="quizzes__info">
+                    <h2 class="quizzes__title heading heading--1">
+                        Assessments, <span>Quizzes,</span> Tests
+                    </h2>
+                    <p class="quizzes__text text text--1">
+                        Easily launch live assignments, quizzes, and tests.
+                        Student results are automatically entered in the online gradebook.
+                    </p>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Manage -->
+    <section class="manage">
+        <div class="container">
+            <div class="manage__wrapper">
+                <div class="manage__info">
+                    <h2 class="manage__title heading heading--1">
+                        <span>Class Management</span> Tools for Educators
+                    </h2>
+                    <p class="manage__text text text--1">
+                        Class provides tools to help run and manage
+                        the class such as Class Roster, Attendance, and more. With the Gradebook, teachers can review
+                        and grade tests and quizzes in real-time.
+                    </p>
+                </div>
+                <div class="manage__pic">
+                    <div class="manage__decor-waves">
+                        <svg class="svg-animated-2" width="85" height="39" viewBox="0 0 85 39" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M1.67816 13.7371C4.58797 10.5538 12.4301 4.58298 20.5199 6.16602C30.6322 8.14482 36.2502 13.7371 49.2147 13.7371C62.1792 13.7371 72.5508 -0.458606 83.8732 2.55257"
+                                stroke="#B2C4F0" stroke-width="3" class="svg-elem-1"></path>
+                            <path
+                                d="M1.67816 25.3406C4.58797 22.1573 12.4301 16.1865 20.5199 17.7695C30.6322 19.7483 36.2502 25.3406 49.2147 25.3406C62.1792 25.3406 72.5508 11.1449 83.8732 14.1561"
+                                stroke="#B2C4F0" stroke-width="3" class="svg-elem-2"></path>
+                            <path
+                                d="M1.67816 36.9441C4.58797 33.7608 12.4301 27.79 20.5199 29.3731C30.6322 31.3519 36.2502 36.9441 49.2147 36.9441C62.1792 36.9441 72.5508 22.7484 83.8732 25.7596"
+                                stroke="#B2C4F0" stroke-width="3" class="svg-elem-3"></path>
+                        </svg>
+
+                    </div>
+                    <div class="manage__decor-circle manage__decor-circle--big"></div>
+                    <div class=" manage__decor-circle manage__decor-circle--small"></div>
+                    <img src="./img/managment/man-pic.jpg" srcset="./img/managment/man-pic@2x.jpg" alt="Managment">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- One -->
+    <section class="one">
+        <div class="container">
+            <div class="one__wrapper">
+                <div class="one__pic">
+                    <img src="./img/one/one-pic.jpg" srcset="./img/one/one-pic@2x.jpg 2x" alt="Discussions">
+                </div>
+                <div class="one__info">
+                    <h2 class="one__title heading heading--1">
+                        One-on-One <span>Discussions</span>
+                    </h2>
+                    <p class="one__text text text--1">Teachers and teacher assistants can talk with students privately
+                        without
+                        leaving the Zoom environment.</p>
+                </div>
+            </div>
+            <button class="see-more one__button">
+                See more features
+            </button>
+        </div>
+    </section>
+
+    <!-- Integrations -->
+    <section class="int">
+        <div class="container">
+            <div class="int__wrapper">
+                <div class="int__pic">
+                    <img src="./img/int/int-pic.jpg" srcset="./img/int/int-pic@2x.jpg 2x" alt="Platforms">
+                </div>
+                <div class="int__info">
+                    <h3 class="int__subtitle subtitle">INTEGRATIONS</h3>
+                    <h2 class="int__title heading heading--2">200+ educational tools and <br> platform
+                        <span>integrations</span>
+                    </h2>
+                    <p class="int__text text text--2">Schoology has every tool your classroom needs and comes
+                        pre-integrated with
+                        more than 200+ tools, student information systems (SIS), and education platforms.</p>
+                    <button class="int__btn-more see-more">
+                        See All Integrations
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonial -->
+    <section class="testimonial">
+        <div class="container">
+            <div class="testimonial__wrapper">
+
+                <!-- Левый блок -->
+                <div class="testimonial__info">
+                    <h3 class="testimonial__subtitle subtitle">TESTIMONIAL</h3>
+                    <h2 class="testimonial__title">What They Say?</h2>
+                    <div class="testimonial__text-content">
+                        <p class="testimonial__text">Skilline has got more than 100k positive ratings from our users
+                            around the world.</p>
+                        <p class="testimonial__text">Some of the students and teachers were greatly helped by the
+                            Skilline.</p>
+                        <p class="testimonial__text">Are you too? Please give your assessment</p>
+                    </div>
+                    <button class="testimonial__see-more-btn  see-more">Write your assessment
+
+                    </button>
+                </div>
+
+                <!-- Правый блок -->
+                <div class="testimonial__outer-wrapper">
+                    <div class="testimonial__review-wrapper">
+                        <div class="testimonial__track">
+
+                            <!-- Slide 1 -->
+                            <div class="testimonial__review-card">
+                                <div class="testimonial__pic">
+                                    <img src="img/testimonial/review-1.jpg" alt="Smiling woman">
+                                </div>
+                                <div class="testimonial__review">
+                                    <p class="testimonial__review-text">"Thank you so much for your help. It's exactly
+                                        what I've been looking for. You won't regret it."</p>
+                                    <div class="testimonial__review-meta">
+                                        <div class="testimonial__review-author">Gloria Rose</div>
+                                        <div class="testimonial__review-rating">⭐⭐⭐⭐⭐ <br /><span
+                                                class="testimonial__review-amount">12 reviews at Yelp</span></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Slide 2 -->
+                            <div class="testimonial__review-card">
+                                <div class="testimonial__pic">
+                                    <img src="img/testimonial/review-2.jpg" alt="Smiling woman">
+                                </div>
+                                <div class="testimonial__review">
+                                    <p class="testimonial__review-text">"I couldn't be happier with the service I
+                                        received from Skilline."</p>
+                                    <div class="testimonial__review-meta">
+                                        <div class="testimonial__review-author">Francisco</div>
+                                        <div class="testimonial__review-rating">⭐⭐⭐⭐⭐ <br /><span
+                                                class="testimonial__review-amount">10 reviews at Yelp</span></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!-- Navigation -->
+                        <button class="testimonial__btn-next">
+                            <svg width="80" height="80" viewBox="0 0 80 80" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="40" cy="40" r="40" fill="white" />
+                                <path d="M34 30L46 40L34 50" stroke="#1EA4CE" stroke-width="4" />
+                            </svg>
+                        </button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- News -->
+    <section class="news">
+        <div class="container">
+            <div class="news__header">
+                <h2 class="news__title heading heading--2">Lastest News and Resources</h2>
+                <p class="news__subtitle text text--2">See the developments that have occurred to Skillines in the world
+                </p>
+            </div>
+            <div class="news__wrapper">
+                <a href="#!" class="news__main-article-link">
+                    <article class="news__main-article">
+                        <img src="./img/news/main.jpg" alt="computer" class="news__main-image">
+                        <div class="news__main-info">
+                            <span class="news__main-tag">NEWS</span>
+                            <h2 class="news__main-title">Class adds $30 million to its balance sheet for a Zoom-friendly
+                                edtech solution</h2>
+                            <p class="news__main-text">Class, launched less than a year ago by Blackboard co-founder
+                                Michael
+                                Chasen, integrates exclusively...</p>
+                            <span href="#!" class="news__read-more">Read more</span>
+                        </div>
+                    </article>
+                </a>
+
+
+                <div class="news__side-articles">
+
+                    <a href="#!" class="news__side-item-link">
+                        <article class="news__side-item">
+                            <div class="news__item-media">
+                                <img src="./img/news/side-news-1.jpg" alt="Girl and laptop" class="news__side-img">
+                                <span class="news__item-tag">PRESS RELEASE</span>
+                            </div>
+                            <div class="news__item-info">
+                                <h3 class="news__item-title">Class Technologies Inc. Closes $30 Million Series A
+                                    Financing
+                                    to
+                                    Meet High Demand</h3>
+                                <p class="news__item-text">Class Technologies Inc., the company that created Class,...
+                                </p>
+                            </div>
+                        </article>
+                    </a>
+
+                    <a href="#!" class="news__side-item-link">
+                        <article class="news__side-item">
+                            <div class="news__item-media">
+                                <img src="./img/news/side-news-2.jpg" alt="Girl and laptop" class="news__side-img">
+                                <span class="news__item-tag">NEWS</span>
+                            </div>
+                            <div class="news__item-info">
+                                <h3 class="news__item-title">Zoom’s earliest investors are betting millions on a better
+                                    Zoom for schools</h3>
+                                <p class="news__item-text">Zoom was never created to be a consumer product. Nonetheless,
+                                    the...
+                                </p>
+                            </div>
+                        </article>
+                    </a>
+
+                    <a href="#!" class="news__side-item-link">
+                        <article class="news__side-item">
+                            <div class="news__item-media">
+                                <img src="./img/news/side-news-3.jpg" alt="Girl and laptop" class="news__side-img">
+                                <span class="news__item-tag">NEWS</span>
+                            </div>
+                            <div class="news__item-info">
+                                <h3 class="news__item-title">Former Blackboard CEO Raises $16M to Bring LMS Features to
+                                    Zoom
+                                    Classrooms</h3>
+                                <p class="news__item-text">This year, investors have reaped big financial returns from
+                                    betting
+                                    on Zoom...</p>
+                            </div>
+                        </article>
+                    </a>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <section class="footer">
+        <div class="container">
+            <div class="footer__logo">
+                <img src="./img/footer/logo.svg" alt="logo Skilline" class="footer__logo-img">
+                <div class="footer__logo-divider"></div>
+                <p class="footer__logo-descr">Virtual Class<br>for Zoom</p>
+            </div>
+            <form class="footer__subscribe">
+                <h5 class="footer__subscribe-title">Subscribe to get our Newsletter</h5>
+                <div class="footer__subscribe-wrapper">
+                    <input type="email" class="footer__subscribe-email" placeholder="Your Email">
+                    <button type="submit" class="footer__subscribe-button">Subscribe</button>
+                </div>
+            </form>
+            <div class="footer__links">
+                <a href="#!" class="footer__link">Careers</a>
+                <a href="#!" class="footer__link">Privacy Policy</a>
+                <a href="#!" class="footer__link">Terms & Conditions</a>
+            </div>
+            <p class="footer__copyright">© 2021 Class Technologies Inc. </p>
+        </div>
+    </section>
+    <script src="./js/main.js"></script>
+
+</body>
+
+</html>

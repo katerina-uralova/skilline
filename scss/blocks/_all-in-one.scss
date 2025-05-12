@@ -1,0 +1,145 @@
+.all-in-one {
+    padding-bottom: 160px;
+
+    @include tbl {
+        padding-bottom: 140px;
+    }
+
+    @include mbxs {
+        padding-bottom: 110px;
+    }
+}
+
+.all-in-one__title {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.all-in-one__descr {
+    max-width: 837px;
+    margin: 0 auto;
+    margin-bottom: 160px;
+    text-align: center;
+
+    @include mbs {
+        margin-bottom: 130px;
+    }
+}
+
+.all-in-one__cards {
+    display: flex;
+    gap: 60px;
+    justify-content: center;
+
+    @include tbl {
+        flex-wrap: wrap;
+        gap: 116px;
+    }
+}
+
+.all-in-one__card {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    padding: 122px 54px 70px;
+    max-width: 450px;
+
+    align-items: center;
+    box-shadow: 0 10px 60px 0 rgba(38, 45, 118, 0.08);
+    background: #fff;
+    border-radius: 20px;
+
+    svg {
+        width: 80px;
+        height: 80px;
+        @include mbs {
+            width: 70px;
+            height: 70px;
+        }
+    }
+
+    @include lg {
+        padding: 110px 50px 60px;
+    }
+
+    @include md {
+        padding: 100px 36px 50px;
+    }
+
+    @include tbl {
+        max-width: 360px;
+        padding: 103px 62px 78px;
+    }
+
+
+
+    @include mbs {
+        padding: 72px 22px 42px;
+
+        svg {
+            width: 60px;
+            height: 60px;
+        }
+    }
+
+}
+
+.all-in-one__card-pic {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    filter: drop-shadow(3px 3px 5px rgba(0, 0, 0, 0.2));
+}
+
+.all-in-one__card-title {
+    margin-bottom: 24px;
+    font-weight: 500;
+    font-size: 30px;
+    text-align: center;
+    color: var(--primery-color);
+
+    @include lg {
+        font-size: 25px;
+    }
+
+    @include md {
+        font-size: 20px;
+    }
+
+    @include mbxs {
+        font-size: 16px;
+    }
+}
+
+.all-in-one__card-text {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.8;
+    text-align: center;
+    color: #696984;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    /* Количество строк до обрезки */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    margin-top: auto;
+
+    @include lg {
+        font-size: 18px;
+    }
+
+    @include md {
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    @include mbxs {
+        font-size: 14px;
+    }
+}

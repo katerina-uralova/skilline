@@ -1,0 +1,49 @@
+.heading {
+    font-family: var(--font-family);
+    color: var(--primery-color);
+    line-height: 1.6;
+
+
+    span {
+        color: var(--secondary-color);
+    }
+
+    &--1 {
+        font-weight: 700;
+        font-size: 40px;
+
+        @include lg {
+            font-weight: 600;
+            font-size: 36px;
+        }
+        @include md {
+            font-size: 30px;
+        }
+        @include mbs {
+            font-size: 26px;
+        }
+        @include mbxs {
+            font-size: 24px;
+            line-height:1.4;
+        }
+    }
+
+    &--2 {
+        font-weight: 600;
+        font-size: 36px;
+
+        @include lg {
+            font-size: 30px; 
+        }
+        @include md {
+            font-size: 26px; 
+        }
+        @include mbs {
+           font-size:24px;
+        }
+        @include mbxs {
+            font-size: 22px; 
+            line-height:1.4;
+        }
+    }
+}
