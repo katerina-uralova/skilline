@@ -25,22 +25,7 @@
 
 }
 
-.about__card--instructors {
 
-    background-image: url('../../img/about/img-01.jpg');
-
-    @include mediaBg() {
-        background-image: url('../../img/about/img-01@2x.jpg');
-    }
-}
-
-.about__card--students {
-    background-image: url('../../img/about/img-02.jpg');
-
-    @include mediaBg() {
-        background-image: url('../../img/about/img-02@2x.jpg');
-    }
-}
 
 
 .about__cards {
@@ -109,7 +94,22 @@
         
     }
 }
+.about__card--instructors {
 
+    background-image: url('./../img/about/img-01.jpg');
+
+    @include mediaBg() {
+        background-image: url('./../img/about/img-01@2x.jpg');
+    }
+}
+
+.about__card--students {
+    background-image: url('./../img/about/img-02.jpg');
+
+    @include mediaBg() {
+        background-image: url('./../img/about/img-02@2x.jpg');
+    }
+}
 .about__card-wrapper {
     position: relative;
    height: 400px;
